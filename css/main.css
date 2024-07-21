@@ -1,0 +1,868 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+.nav {
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.container {
+    width: 90%;
+    height: 60px;
+    align-items: center;
+    display: flex;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.fir-nav {
+    width: 20%;
+    float: left;
+    text-align: center;
+
+}
+
+.fir-nav h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 30px;
+    padding: 30px;
+}
+
+.fir-nav h2::after {
+    content: ".";
+    color: rgb(195, 17, 17);
+
+}
+
+.sec-nav {
+    float: right;
+    width: 60%;
+    text-align: center;
+
+}
+
+.sec-nav a {
+    margin-left: 15px;
+    color: rgb(77, 81, 81);
+
+
+}
+
+.sec-nav a:hover {
+    background-color: #fff;
+    color: black;
+    border-bottom: 3px red solid;
+
+}
+
+.btn {
+    padding: 10px 10px;
+    font-size: 18px;
+}
+
+.active {
+    border-bottom: 3px red solid;
+}
+
+
+
+
+
+
+/* end first sec */
+
+/* start sec sec */
+.sec-2 {
+    width: 100%;
+    display: flex;
+
+    margin-bottom: 60px;
+    height: 100vh;
+}
+
+.container-sec {
+    width: 90%;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.fir-text h1,
+.fir-text p {
+    width: 70%;
+    padding-top: 40px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.big-btn {
+    display: flex;
+    margin-top: 15px;
+}
+
+.one-but {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background-color: brown;
+    width: 138px;
+    height: 48px;
+    border-radius: 0px 100px 100px;
+}
+
+.big-btn a {
+    color: white;
+    padding-left: 25px;
+    text-decoration: none;
+}
+
+.bg-transparent {
+    background-color: transparent;
+    color: black;
+    width: 350px;
+    padding: 10px;
+}
+
+.icoon {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, red 0 50%, transparent 50% 100%);
+    font-size: 15px;
+    position: relative;
+}
+
+.icoon::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 35px;
+    height: 35px;
+    border-radius: inherit;
+    z-index: 1;
+}
+
+.icoon i {
+
+    transform: translate(50%, 50%);
+    position: absolute;
+    top: 20%;
+    z-index: 555;
+    left: 27%;
+}
+
+.icon-float a {
+    color: black;
+    z-index: 8;
+    font-size: 21px;
+    padding: 0;
+}
+
+.icon-float {
+    position: relative;
+}
+
+.btn-float {
+    display: flex;
+    align-items: center;
+
+}
+
+.img-sec {
+    width: 90%;
+
+    margin-top: 60px;
+    align-items: center;
+}
+
+.img-right {
+    width: 80%;
+    padding: 30px 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-right img {
+    width: 100%;
+    justify-content: center;
+    filter: drop-shadow(4px 4px 9px #000a);
+}
+
+.img-right img:hover {
+    animation: vibration 1s infinite;
+}
+
+@keyframes vibration {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    50% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    60% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    100% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+}
+
+/* end sec2 */
+
+.chefs {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.container-3 {
+    width: 90%;
+}
+
+.chefs-cards {
+    width: 100%;
+    gap: 30px;
+    display: flex;
+}
+
+.chef-h2 {
+
+    text-align: center;
+    margin-top: 40px;
+}
+
+.chef-h2 h2 {
+
+    font-weight: 400;
+    color: #7f7f90;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.chef-h2 p {
+    font-size: 43px;
+    font-family: "Amatic SC", sans-serif;
+    padding-bottom: 25px;
+    margin-bottom: 23px;
+    text-align: center;
+}
+
+.chef-h2 p span {
+    color: rgb(208, 20, 19);
+}
+
+.card {
+    width: 33.3333%;
+    overflow: hidden;
+    transition: all 0.7s;
+
+
+
+}
+
+.card .img-card {
+    position: relative;
+}
+
+
+.card .img-card img {
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+
+}
+
+.card .social-box li {
+    list-style: none;
+    padding: 10px;
+}
+
+.card .social-box i {
+    font-size: 25px;
+    color: #37373f66;
+}
+
+.card .social-box {
+    position: absolute;
+    background-color: #ffffff4d;
+    padding: 10px;
+    border-radius: 10px;
+    top: 20%;
+    right: -20%;
+    transition: all 1.5s;
+}
+
+.chefs-cards i:hover {
+    color: #37373fe6;
+}
+
+.chefs-cards .card:hover {
+    transition: all 1;
+    transform: scale(1.1);
+}
+
+.chefs-cards .card:hover .social-box {
+    right: 2%;
+    transition: all 1s;
+}
+
+.card .img-card::before {
+
+    content: "";
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    left: 0;
+    background-image: url(../images-20240112T161024Z-001/images/team-shape.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: 5;
+
+}
+
+.card {
+    text-align: center;
+}
+
+.card h3 {
+    padding: 15px 0;
+}
+
+.ifno-cards span {
+    font-weight: 400;
+    font-size: 16px;
+    color: #7f7f90;
+}
+
+.card p {
+    padding: 15px 0;
+    font-size: 0.9375rem;
+    font-style: italic;
+    color: #7f7f90;
+}
+
+/* <!-- ------------------end sec-3--------> */
+.gallery {
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.picture {
+    width: 33%;
+    border: 4px solid #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.picture img {
+    width: 100%;
+}
+
+.layer p {
+    text-align: center;
+}
+
+.layer {
+    width: 100%;
+    height: 100%;
+    padding: 0.9375rem;
+    background-color: #00000096;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transition: top 1s;
+}
+
+.container-4 {
+    width: 80%;
+}
+
+.three-photo {
+
+    gap: 1.25rem;
+    height: 72.8125rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+}
+
+.three-photo .picture:hover .layer {
+    top: 0;
+}
+
+/* <!-- <end-sec4>                </end-sec4> --> */
+/* <!-- start sec-5 --> */
+
+.contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.container-5 {
+    width: 90%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.iframe iframe {
+
+    width: 100%;
+    height: 21.875rem;
+}
+
+.details {
+    gap: 26px;
+    margin: 0;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.address {
+
+    width: 49%;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    background-color: #eeeeee;
+}
+
+.icons {
+    width: 67px;
+    height: 66px;
+    border-radius: 50%;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+    color: white;
+}
+
+.details h3 {
+    margin-bottom: 15px;
+}
+
+
+.input {
+    width: 100%;
+
+
+}
+
+.input-inform {
+    margin-top: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.input-inform input {
+    padding-left: 10px;
+    height: 50px;
+    width: 100%;
+}
+
+.subject {
+    width: 100%;
+}
+
+.subject input {
+    margin-top: 20px;
+    padding-left: 10px;
+    width: 100%;
+    height: 80px;
+}
+
+textarea {
+    width: 100%;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+
+.button button {
+    width: 150px;
+    height: 49px;
+    border-radius: 40px;
+    background-color: rgb(195, 17, 17);
+    color: white;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.last-sec {
+    margin-top: 40px;
+    width: 100%;
+    background-image: url(../images-20240112T161024Z-001/images/textured-metal-background.jpg);
+    background-size: 100% 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+
+}
+
+.container-end {
+    width: 90%;
+    --gap: 1.25rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about {
+    width: 25%;
+    margin-top: 50px;
+    color: white;
+    margin-left: 60px;
+}
+
+.end-picture {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-top: 50px;
+}
+
+.end-picture img {
+    width: 15%;
+    margin-right: 10px;
+}
+
+.end-picture h2 {
+    font-size: 30px;
+}
+
+.end-picture h2::after {
+    content: ".";
+    color: rgb(195, 17, 17);
+}
+
+.about p {
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.about h3 {
+    text-align: center;
+    padding: 15px;
+    border-bottom: 2px solid #ddd6;
+    margin-bottom: 15px;
+
+}
+
+.about ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.about ul li {
+    list-style: none;
+    padding: 10px;
+    width: 60px;
+}
+
+.about ul li a {
+    width: 50px;
+    height: 30px;
+    color: white;
+}
+
+.about ul li a i {
+    font-size: 25px;
+}
+
+.subscribe {
+    width: 50%;
+    color: white;
+    margin-top: 60px;
+}
+
+.subscribe-box {
+    width: 80%;
+    margin-top: 50px;
+    color: white;
+    margin-left: 60px;
+    color: white;
+}
+
+.subscribe-box h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.subscribe-box p {
+    margin-bottom: 30px;
+}
+
+.formee form input {
+    width: 80%;
+    height: 45px;
+}
+
+.formee form button {
+    width: 19%;
+    height: 45px;
+    background-color: rgb(195, 17, 17);
+    color: white;
+    font-size: 16px;
+    border-radius: 9px;
+}
+
+.links-midd h3 {
+    margin-top: 25px;
+}
+
+.ul-bigger {
+    display: flex;
+    align-items: center;
+}
+
+.fir-ul,
+.sec-ul {
+    width: 40%;
+}
+
+.fir-ul {
+    margin-right: 40px;
+}
+
+.fir-ul ul,
+.sec-ul ul {
+    list-style-type: none;
+}
+
+.fir-ul ul li a,
+.sec-ul ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.fir-ul ul li,
+.sec-ul ul li {
+    margin-bottom: 10px;
+    padding-left: 4px;
+    list-style: none;
+    transition: all 1s;
+}
+
+.fir-ul ul li:hover {
+    transform: translateX(10px);
+    background-color: #222;
+}
+
+.sec-ul ul li:hover {
+    transform: translateX(10px);
+    background-color: #222;
+}
+
+.last-sec1 {
+    width: 18%;
+    margin-top: 60px;
+    color: white;
+}
+
+.last-text {
+    margin-top: 60px;
+}
+
+.last-text h3 {
+    font-size: 22px;
+}
+
+.last-text ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.last-text ul li i {
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    font-size: 1.375rem;
+    margin-right: 5px;
+}
+
+.last-text h3 {
+    margin-bottom: 20px;
+}
+
+.ul-bigger ul li i {
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+input[type="checkbox"] {
+    display: none;
+}
+
+label {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 2px solid gray;
+    border-radius: 30px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.ll {
+
+    text-align: justify;
+    box-sizing: border-box;
+    transition: .2s;
+}
+
+.fa-sun {
+    color: orange;
+    font-size: 25px;
+    text-shadow: 0px 0px 20px orange;
+    transform: translateX(25px);
+    transition: .3s;
+}
+
+.fa-moon {
+    color: black;
+    font-size: 25px;
+    text-shadow: 0px 0px 20px white;
+    transform: translateX(0px);
+    opacity: 0;
+    transition: .3s;
+}
+
+#switch-button:checked~label>.fa-sun {
+    opacity: 0;
+    transform: translateX(0px);
+}
+
+#switch-button:checked~label>.fa-moon {
+    opacity: 1;
+    transform: translateX(-25px);
+}
+
+#switch-button:checked~.ll {
+    background: black;
+    color: white;
+}
+
+body:has(#switch-button:checked) {
+    background-color: #222 !important;
+    color: white !important;
+}
+
+.address-content {
+    color: black !important;
+}
